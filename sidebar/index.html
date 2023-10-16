@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema JE3</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="./script.js" defer></script>
+  
+  </head>
+  
+  <body>
+  
+    <nav>
+      <div class="sidebar-header">
+        <a class="logo-wrapper">
+          <img src="./assets/logo.svg" alt="Logo">
+          <h2 class="hidden" style="font-size: 20px;">Sistema JE3</h2>
+        </a>
+        <button class="toggle-btn">
+          <img src="./assets/expand.svg" alt="expand button">
+        </button>
+      </div>
+
+      <div class="sidebar-links">
+        <a class="link active" id="home">
+            <img src="./assets/home.svg" alt="">
+            <span class="hidden">Home</span>
+        </a>
+        <a class="link" id="cadastro">
+            <img src="./assets/projects.svg" alt="">
+            <span class="hidden">Cadastros</span>
+        </a>
+        <a class="link" id="dashboard">
+            <img src="./assets/dashboard.svg" alt="">
+            <span class="hidden">Dashboard</span>
+        </a>
+        <a class="link" id="vendas">
+            <img src="./assets/carrinho-de-compras.png" alt="">
+            <span class="hidden">Vendas</span>
+        </a>
+    </div>
+    
+      <div class="sidebar-bottom">
+        <div class="sidebar-links">
+          <a class="link">
+            <img src="./assets/settings.svg" alt="">
+            <span class="hidden">Contigurações</span>
+          </a>
+        </div>
+
+        <div class="user-profile">
+          <div class="user-avatar">
+            <img src="./assets/profile-pic.jpg" alt="">
+          </div>
+          <div class="user-details hidden">
+            <p class="username">ADM</p>
+            <p class="user-email">je4740091@gmail.com</p>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section class="header">
+      <div class="nav-bar">
+        <p class="text-nav"><b>Bem Vindo de Volta!</b></p>
+      </div>
+    </section>
+    
+    <section class="home">
+      <div class="card">
+          <div class="card-1">
+            <p class="text-card"><b>Meta</b></p>
+            <canvas class="grafico-meta grafico"></canvas>
+          </div>
+
+          <div class="card-2">
+            <p class="text-card"><b>Media Geral</b></p>
+            <canvas class="grafico-media grafico"></canvas>
+          </div>
+
+          <div class="card-3">
+            <p class="text-card"><b>Mais Vendidos</b></p>
+            <canvas class="grafico-mais-vendidos grafico"></canvas>
+          </div>
+      </div>
+    </section>
+
+    <section class="cadastro">
+      <div class="card">
+          <div class="card-1">
+            <p class="text-card"><b>Meta cadastros</b></p>
+            <canvas class="grafico-meta grafico"></canvas>
+          </div>
+
+          <div class="card-2">
+            <p class="text-card"><b>Media Geral cadastros</b></p>
+            <canvas class="grafico-media grafico"></canvas>
+          </div>
+
+          <div class="card-3">
+            <p class="text-card"><b>Mais Vendidos cadastros</b></p>
+            <canvas class="grafico-mais-vendidos grafico"></canvas>
+          </div>
+      </div>
+    </section>
+
+    <section class="dashboard">
+      <div class="card">
+          <div class="card-1">
+            <p class="text-card"><b>Meta dashboard</b></p>
+            <canvas class="grafico-meta grafico"></canvas>
+          </div>
+
+          <div class="card-2">
+            <p class="text-card"><b>Media Geral dashboard</b></p>
+            <canvas class="grafico-media grafico"></canvas>
+          </div>
+
+          <div class="card-3">
+            <p class="text-card"><b>Mais Vendidos dashboard</b></p>
+            <canvas class="grafico-mais-vendidos grafico"></canvas>
+          </div>
+      </div>
+    </section>
+
+    <section class="vendas">
+      <div class="card">
+          <div class="card-1">
+            <p class="text-card"><b>Meta vendas</b></p>
+            <canvas class="grafico-meta grafico"></canvas>
+          </div>
+
+          <div class="card-2">
+            <p class="text-card"><b>Media Geral vendas</b></p>
+            <canvas class="grafico-media grafico"></canvas>
+          </div>
+
+          <div class="card-3">
+            <p class="text-card"><b>Mais Vendidos vendas</b></p>
+            <canvas class="grafico-mais-vendidos grafico"></canvas>
+          </div>
+      </div>
+    </section>
+
+    <section class="footer">
+      <div class="footer-bar">
+        <p class="text-footer">&copy;2023 <b>Sistema JE3</b></p>
+      </div>
+    </section>
+
+  </body>
+</html>
