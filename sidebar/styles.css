@@ -164,7 +164,7 @@ body.active .toggle-btn {
   font-size: 0.8rem;
 }
 
-.nav-bar{
+.header{
   background: rgb(255, 255, 255);
   margin-left: 350px;
   margin-right: 150px;
@@ -172,26 +172,28 @@ body.active .toggle-btn {
   border-radius: 10px;
   width: 70%;
   height: 100px;
+  position: absolute;
 }
 
-.nav-bar .text-nav{
+.header .header-text{
   font-size: 25px;
   margin-top: 30px;
   margin-left: 550px;
   position: absolute;
 }
 
-.footer-bar{
+.footer{
   background: rgb(255, 255, 255);
   margin-left: 350px;
   margin-right: 150px;
-  margin-top: 730px;
+  margin-top: 820px;
   border-radius: 10px;
   width: 70%;
   height: 60px;
+  position: absolute;
 }
 
-.footer-bar .text-footer{
+.footer .footer-text{
   font-size: 15px;
   margin-top: 20px;
   margin-left: 600px;
@@ -203,7 +205,7 @@ body.active .toggle-btn {
   background: rgb(255, 255, 255);
   margin-left: 350px;
   margin-right: 150px;
-  margin-top: 75px;
+  margin-top: 200px;
   width: 20%;
   height: 550px;
   position: absolute;
