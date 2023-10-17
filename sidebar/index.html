@@ -1,156 +1,249 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sistema JE3</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="./script.js" defer></script>
-  
-  </head>
-  
-  <body>
-  
-    <nav>
-      <div class="sidebar-header">
-        <a class="logo-wrapper">
-          <img src="./assets/logo.svg" alt="Logo">
-          <h2 class="hidden" style="font-size: 20px;">Sistema JE3</h2>
-        </a>
-        <button class="toggle-btn">
-          <img src="./assets/expand.svg" alt="expand button">
-        </button>
-      </div>
+<head>
 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistema JE3</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="./script.js" defer></script>
+
+</head>
+
+<body>
+
+  <nav>
+    <div class="sidebar-header">
+      <a class="logo-wrapper">
+        <img src="./assets/logo.svg" alt="Logo">
+        <h2 class="hidden" style="font-size: 20px;">Sistema JE3</h2>
+      </a>
+      <button class="toggle-btn">
+        <img src="./assets/expand.svg" alt="expand button">
+      </button>
+    </div>
+
+    <div class="sidebar-links">
+      <a class="link active" id="home">
+        <img src="./assets/home.svg" alt="">
+        <span class="hidden">Home</span>
+      </a>
+      <a class="link" id="cadastro">
+        <img src="./assets/projects.svg" alt="">
+        <span class="hidden">Cadastros</span>
+      </a>
+      <a class="link" id="dashboard">
+        <img src="./assets/dashboard.svg" alt="">
+        <span class="hidden">Dashboard</span>
+      </a>
+      <a class="link" id="vendas">
+        <img src="./assets/carrinho-de-compras.png" alt="">
+        <span class="hidden">Vendas</span>
+      </a>
+    </div>
+
+    <div class="sidebar-bottom">
       <div class="sidebar-links">
-        <a class="link active" id="home">
-            <img src="./assets/home.svg" alt="">
-            <span class="hidden">Home</span>
+        <a class="link">
+          <img src="./assets/settings.svg" alt="">
+          <span class="hidden">Contigurações</span>
         </a>
-        <a class="link" id="cadastro">
-            <img src="./assets/projects.svg" alt="">
-            <span class="hidden">Cadastros</span>
-        </a>
-        <a class="link" id="dashboard">
-            <img src="./assets/dashboard.svg" alt="">
-            <span class="hidden">Dashboard</span>
-        </a>
-        <a class="link" id="vendas">
-            <img src="./assets/carrinho-de-compras.png" alt="">
-            <span class="hidden">Vendas</span>
-        </a>
-    </div>
-    
-      <div class="sidebar-bottom">
-        <div class="sidebar-links">
-          <a class="link">
-            <img src="./assets/settings.svg" alt="">
-            <span class="hidden">Contigurações</span>
-          </a>
-        </div>
+      </div>
 
-        <div class="user-profile">
-          <div class="user-avatar">
-            <img src="./assets/profile-pic.jpg" alt="">
-          </div>
-          <div class="user-details hidden">
-            <p class="username">ADM</p>
-            <p class="user-email">je4740091@gmail.com</p>
-          </div>
+      <div class="user-profile">
+        <div class="user-avatar">
+          <img src="./assets/profile-pic.jpg" alt="">
+        </div>
+        <div class="user-details hidden">
+          <p class="username">ADM</p>
+          <p class="user-email">je4740091@gmail.com</p>
         </div>
       </div>
-    </nav>
+    </div>
+  </nav>
 
-    <div class="header">
-      <header>
-        <p class="header-text">
-          <b>Bem Vindo de Volta!</b>
+  <div class="header">
+    <header>
+      <p class="header-text">
+        <b>Bem Vindo de Volta!</b>
+      </p>
+    </header>
+  </div>
+
+  <section class="home">
+    <div class="card">
+      <div class="card-1">
+        <p class="text-card"><b>Meta</b></p>
+        <canvas class="grafico-meta grafico"></canvas>
+      </div>
+
+      <div class="card-2">
+        <p class="text-card"><b>Media Geral</b></p>
+        <canvas class="grafico-media grafico"></canvas>
+      </div>
+
+      <div class="card-3">
+        <p class="text-card"><b>Mais Vendidos</b></p>
+        <canvas class="grafico-mais-vendidos grafico"></canvas>
+      </div>
+    </div>
+  </section>
+
+  <section class="cadastro">
+    <div class="card">
+      <div class="card-cadastro">
+        <p class="text-cadastro">
+          Selecione qual Cadastro deseja Olhar:
         </p>
-      </header>
+        <div class="comboBox">
+          <select class="opcao" id="opcao-select">
+            <option value="produto"><b>Produtos</b></option>
+            <option value="cliente"><b>Clientes</b></option>
+            <option value="colaborador"><b>Colaborador</b></option>
+            <option value="vendas"><b>Vendas</b></option>
+          </select>
+        </div>
+        <div class="tabela-cadastros" id="tabela-cadastros">
+          <div class="produto">
+            <table border="1" class="tabela-cadastros">
+              <tr>
+                <th>ID Produto</th>
+                <th>Nome Produto</th>
+                <th>Categoria</th>
+                <th>Valor</th>
+              </tr>
+              <tr>
+                <td>01</td>
+                <td>Pastel de Carne</td>
+                <td>Pastel Salgado</td>
+                <td>R$ 7.50</td>
+              </tr>
+              <tr>
+                <td>02</td>
+                <td>Pastel de Frango</td>
+                <td>Pastel Salgado</td>
+                <td>R$ 7.50</td>
+              </tr>
+            </table>
+          </div>
+
+          <div class="cliente">
+            <table border="1" class="tabela-cadastros">
+              <tr>
+                <th>ID Cliente</th>
+                <th>Nome Cliente</th>
+                <th>N° Telefone</th>
+                <th>Endereço</th>
+              </tr>
+              <tr>
+                <td>01</td>
+                <td>Joao Emerson</td>
+                <td>45 99979-1926</td>
+                <td>Av. Deputado Antonio Lustosa 123</td>
+              </tr>
+              <tr>
+                <td>02</td>
+                <td>Roberta</td>
+                <td>45 99926-3662</td>
+                <td>Rua. Margarida 123</td>
+              </tr>
+            </table>
+          </div>
+
+          <div class="colaborador">
+            <table border="1" class="tabela-cadastros">
+              <tr>
+                <th>ID Colaborador</th>
+                <th>Nome Colaborador</th>
+                <th>Nivel de Permição</th>
+                <th>Senha</th>
+              </tr>
+              <tr>
+                <td>01</td>
+                <td>Igor</td>
+                <td>10</td>
+                <td>123465</td>
+              </tr>
+              <tr>
+                <td>02</td>
+                <td>Ana</td>
+                <td>50</td>
+                <td>1452365</td>
+              </tr>
+            </table>
+          </div>
+
+          <div class="vendas">
+            <table border="1" class="tabela-cadastros">
+              <tr>
+                <th>ID Venda</th>
+                <th>N° Venda</th>
+                <th>Cliente</th>
+                <th>Produto</th>
+              </tr>
+              <tr>
+                <td>01</td>
+                <td>01</td>
+                <td>Joao</td>
+                <td>Pastel de carne</td>
+              </tr>
+              <tr>
+                <td>02</td>
+                <td>02</td>
+                <td>Roberta</td>
+                <td>Pastel de frango</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <section class="dashboard">
+    <div class="card">
+      <div class="card-1">
+        <p class="text-card"><b>Meta dashboard</b></p>
+        <canvas class="grafico-meta grafico"></canvas>
+      </div>
+
+      <div class="card-2">
+        <p class="text-card"><b>Media Geral dashboard</b></p>
+        <canvas class="grafico-media grafico"></canvas>
+      </div>
+
+      <div class="card-3">
+        <p class="text-card"><b>Mais Vendidos dashboard</b></p>
+        <canvas class="grafico-mais-vendidos grafico"></canvas>
+      </div>
     </div>
-    
-    <section class="home">
-      <div class="card">
-          <div class="card-1">
-            <p class="text-card"><b>Meta</b></p>
-            <canvas class="grafico-meta grafico"></canvas>
-          </div>
+  </section>
 
-          <div class="card-2">
-            <p class="text-card"><b>Media Geral</b></p>
-            <canvas class="grafico-media grafico"></canvas>
-          </div>
-
-          <div class="card-3">
-            <p class="text-card"><b>Mais Vendidos</b></p>
-            <canvas class="grafico-mais-vendidos grafico"></canvas>
-          </div>
+  <section class="vendas">
+    <div class="card">
+      <div class="card-1">
+        <p class="text-card"><b>Meta vendas</b></p>
+        <canvas class="grafico-meta grafico"></canvas>
       </div>
-    </section>
 
-    <section class="cadastro">
-      <div class="card">
-          <div class="card-1">
-            <p class="text-card"><b>Meta cadastros</b></p>
-            <canvas class="grafico-meta grafico"></canvas>
-          </div>
-
-          <div class="card-2">
-            <p class="text-card"><b>Media Geral cadastros</b></p>
-            <canvas class="grafico-media grafico"></canvas>
-          </div>
-
-          <div class="card-3">
-            <p class="text-card"><b>Mais Vendidos cadastros</b></p>
-            <canvas class="grafico-mais-vendidos grafico"></canvas>
-          </div>
+      <div class="card-2">
+        <p class="text-card"><b>Media Geral vendas</b></p>
+        <canvas class="grafico-media grafico"></canvas>
       </div>
-    </section>
 
-    <section class="dashboard">
-      <div class="card">
-          <div class="card-1">
-            <p class="text-card"><b>Meta dashboard</b></p>
-            <canvas class="grafico-meta grafico"></canvas>
-          </div>
-
-          <div class="card-2">
-            <p class="text-card"><b>Media Geral dashboard</b></p>
-            <canvas class="grafico-media grafico"></canvas>
-          </div>
-
-          <div class="card-3">
-            <p class="text-card"><b>Mais Vendidos dashboard</b></p>
-            <canvas class="grafico-mais-vendidos grafico"></canvas>
-          </div>
+      <div class="card-3">
+        <p class="text-card"><b>Mais Vendidos vendas</b></p>
+        <canvas class="grafico-mais-vendidos grafico"></canvas>
       </div>
-    </section>
-
-    <section class="vendas">
-      <div class="card">
-          <div class="card-1">
-            <p class="text-card"><b>Meta vendas</b></p>
-            <canvas class="grafico-meta grafico"></canvas>
-          </div>
-
-          <div class="card-2">
-            <p class="text-card"><b>Media Geral vendas</b></p>
-            <canvas class="grafico-media grafico"></canvas>
-          </div>
-
-          <div class="card-3">
-            <p class="text-card"><b>Mais Vendidos vendas</b></p>
-            <canvas class="grafico-mais-vendidos grafico"></canvas>
-          </div>
-      </div>
-    </section>
-
-    <div class="footer">
-      <footer>
-        <p class="footer-text">&copy;2023 <b>JE3 system</b></p>
-      </footer>
     </div>
+  </section>
 
-  </body>
+  <div class="footer">
+    <footer>
+      <p class="footer-text">&copy;2023 <b>JE3 system</b></p>
+    </footer>
+  </div>
+
+</body>
+
 </html>

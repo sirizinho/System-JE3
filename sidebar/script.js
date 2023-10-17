@@ -30,3 +30,18 @@ links.forEach(link => {
     showContent(sectionId);
   });
 });
+
+const select = document.getElementById("opcao-select");
+const divs = document.querySelectorAll(".tabela-cadastros > div");
+
+select.addEventListener("change", () => {
+  const selectedOption = select.value;
+
+  // Oculta todas as divs
+  divs.forEach((div) => {
+    div.style.display = "none";
+  });
+
+  // Mostra a div correspondente à opção selecionada
+  document.querySelector("." + selectedOption).style.display = "block";
+});
