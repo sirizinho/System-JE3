@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Css/style.css">
+    <link rel="stylesheet" href="../Css/mobile.css">
+    <script src="../Script/script.js"></script>
+    <title>Login</title>
+</head>
+
+<body>
+    <section class="login-section">
+        <div class="container">
+            <form class="form-login">
+                <div class="profile">
+                    <img src="../assets/avatar.png">
+                </div>
+                <input type="text" placeholder="Usuario..." id="user">
+                <input type="password" placeholder="Senha..." id="pass">
+                <div class="button-container">
+                    <button onclick="login(event)">Entrar</button>
+                </div>
+                <div class="mensage-logue hidden" id="logue"><b>Usuario ou Senha Invalidos!</b></div>
+                <div class="background-form"></div>
+            </form>
+        </div>
+    </section>
+</body>
+
+</html>

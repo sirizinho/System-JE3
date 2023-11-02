@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistema JE3</title>
+  <link rel="stylesheet" href="../Css/styles.css">
+  <link rel="stylesheet" href="../Css/mobile.css">
+  <script src="../Script/script copy.js" defer></script>
+
+</head>
+
+<body>
+
+  <nav>
+    <div class="sidebar-header">
+      <a class="logo-wrapper">
+        <img src="../assets/logo.svg" alt="Logo">
+        <h2 class="hidden" style="font-size: 20px;">Sistema JE3</h2>
+      </a>
+      <button class="toggle-btn">
+        <img src="../assets/expand.svg" alt="expand button">
+      </button>
+    </div>
+
+    <div class="sidebar-links">
+      <a class="link active" id="home">
+        <img src="../assets/home.svg" alt="">
+        <span class="hidden">Home</span>
+      </a>
+      <a class="link" id="cadastro">
+        <img src="../assets/projects.svg" alt="">
+        <span class="hidden">Cadastros</span>
+      </a>
+      <a class="link" id="dashboard">
+        <img src="../assets/dashboard.svg" alt="">
+        <span class="hidden">Dashboard</span>
+      </a>
+      <a class="link" id="vendas">
+        <img src="../assets/carrinho-de-compras.png" alt="">
+        <span class="hidden">Vendas</span>
+      </a>
+    </div>
+
+    <div class="sidebar-bottom">
+      <div class="sidebar-links">
+        <a class="link">
+          <img src="../assets/settings.svg" alt="">
+          <span class="hidden">Contigurações</span>
+        </a>
+      </div>
+
+      <div class="user-profile">
+        <div class="user-avatar">
+          <img src="../assets/profile-pic.jpg" alt="">
+        </div>
+        <div class="user-details hidden">
+          <p class="username">ADM</p>
+          <p class="user-email">je4740091@gmail.com</p>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <section class="home">
+      <div class="header">
+        <div class="background-home"></div>
+          <p class="txt-header-home">
+            <b>Bem Vindo de Volta!</b>
+          </p>
+      </div>
+      <div class="Cards">
+        <div class="card-total-home">
+          <div class="background-card card-total"></div>
+          <h1 class="title-card">Vendas Totais</h1>
+          <p class="text-card">Vendas do Dia: <b class="value-text-total-card" id="dia">R$ 150.00</b></p> 
+          <p class="text-card vds">Vendas da Semana: <b class="value-text-total-card" id="semana">R$ 850.00</b></p>
+          <p class="text-card vdm">Vendas do Mes: <b class="value-text-total-card" id="mes">R$ 8.500.53</b></p>
+        </div>
+
+        <div class="card-meta-home">
+          <div class="background-card card-meta"></div> 
+          <h1 class="title-card meta">Metas</h1> 
+          <p class="text-card-meta">Valor a Ser Atingindo: <b class="value-text-meta-card">R$ 35.000,00</b></p>
+          <p class="text-card-meta mat">Valor Atingido: <b class="value-text-meta-card">R$ 35.500,00</b></p>
+          <p class="text-card-meta mfa">Valor a Atingir: <b class="value-text-meta-card">R$ +500,00</b></p>
+        </div>
+      </div>
+  </section>
+</body>
+
+</html>
